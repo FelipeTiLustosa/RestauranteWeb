@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores do Mundo</title>
+
+    <!-- cssexterno -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reservation.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/5289663089.js" crossorigin="anonymous"></script>
+
+    <!-- código java script -->
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/reservation.js" defer></script>
+</head>
+
+<body>
+    <!-- Seção de cabeçalho -->
+    <section class="header-img">
+        <header class="header-main">
+            <nav class="nav-main">
+                <h1 class="main-title"><a href="#">Sabores do Mundo</a></h1>
+                <div class="openMenu"><i class="fa-solid fa-bars" style="color: #ff9d2e;"></i></div>
+                <ul class="nav-ul">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#menu">Cardápio</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="#">Reservas</a></li>
+                    <div class="closeMenu"><i class="fa-solid fa-xmark"></i></div>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <h2>
+                Reserve <span>uma mesa</span></h2>
+            <div class="reservation-details">
+                <p>Reserve uma mesa
+                    Bem-vindo ao nosso restaurante! Para garantir que você tenha a melhor experiência gastronômica, é altamente recomendável fazer uma reserva. Nosso sistema de reservas é rápido e fácil - basta preencher o formulário abaixo com a data e horário de sua preferência e confirmaremos sua reserva por e-mail ou telefone.
+                    </h2>
+            </div>
+            <div class="table-container">
+                <form name="reservation-form">
+                    <h2>Cadastro</h2>
+                    <div class="content">
+                        <div class="input-box">
+                            <label for="name">Nome completo</label>
+                            <input type="text" placeholder="Digite seu nome completo" name="name" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Digite seu e-mail" name="email" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="phone">Número de telefone</label>
+                            <input type="tel" placeholder="Digite o número de telefone" name="phone" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="date">Data</label>
+                            <input type="date" placeholder="Insira a data" name="date" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="no-of-persons">Número de pessoas</label>
+                            <input type="number" placeholder="Número de pessoas" min="1" max="10" name="no-of-persons"
+                                required>
+                        </div>
+                        <div class="input-box">
+                            <label for="time">Horário</label>
+                            <input type="time" placeholder="Enter phone number" name="time" required>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" value="Reserve Seats" name="Reserve Seats">Reserva</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
